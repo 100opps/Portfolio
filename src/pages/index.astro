@@ -1,15 +1,19 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Navbar from '../components/Navbar.astro';
 import KeybordManager from '../components/KeybordManager.astro';
+import calculateAge from '../utils/ageCalculator';
+import Navbar from '../components/Navbar.astro';
+import Layout from '../layouts/Layout.astro';
+
 import { config } from '../constants';
+
+const age = calculateAge(config.birthDate);
 ---
 
 <Layout>
   <Navbar />
   <h1 class="text-2xl font-bold">{config.title}</h1>
   <p class="paragraph">
-    I'm Martín Aranda, a 16-year-old student from Chile who's into programming. Honestly, I enjoy messing around with
+    I'm Martín Aranda, a {age}-year-old student from Chile who's into programming. Honestly, I enjoy messing around with
     code, and I've learned a lot by watching YouTube videos. My top YouTubers are Midudev and Platzi.
   </p>
   <p class="paragraph">
