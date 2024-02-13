@@ -1,0 +1,14 @@
+body {
+  background-color: #111;
+  color: white;
+}
+
+.wrapper {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.bg-img {
+  background-image: url('/grid-bg.png');
+}
