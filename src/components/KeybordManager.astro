@@ -1,0 +1,74 @@
+---
+import { config as user } from '../constants';
+
+interface SocialProfile {
+  id: string;
+  section: string;
+  title: string;
+  url: string;
+  icon: string;
+  hotkey: string;
+}
+
+const socials: SocialProfile[] = user.profiles.map(({ network, url, svg }) => {
+  return {
+    id: network,
+    section: '🕹️ Social',
+    title: network,
+    url,
+    icon: svg,
+    hotkey: `ctrl+${network[0].toUpperCase()}`,
+  };
+});
+---
+
+<footer class="fixed bottom-0 left-0 w-full bg-[#000] border-t border-gray-800 text-center p-2.5">
+  Press
+  <kbd class="key-styling">⌘</kbd> +
+  <kbd class="key-styling">K</kbd>
+  to open the command palette.
+</footer>
+
+<style>
+  .key-styling {
+    background-color: #222;
+    border-radius: 0.375rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 0.75rem;
+  }
+</style>
+
+<ninja-keys hideBreadcrumbs class="dark" data-info={JSON.stringify(socials)}></ninja-keys>
+
+<script>
+  import 'ninja-keys';
+
+  const ninja = document.querySelector('ninja-keys');
+
+  if (ninja) {
+    const info = ninja.getAttribute('data-info');
+    if (info) {
+      try {
+        const parsedInfo = JSON.parse(info);
+        const data = parsedInfo.map(({ url, hotkey, icon, id, section, title }: any) => {
+          return {
+            id,
+            title,
+            icon,
+            hotkey,
+            section,
+            handler: () => {
+              window.open(url, '_blank');
+            },
+          };
+        });
+        ninja.data = data;
+      } catch (err) {
+        console.error('Error parsing JSON data:', err);
+      }
+    }
+  }
+</script>

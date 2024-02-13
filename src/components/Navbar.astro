@@ -1,0 +1,30 @@
+---
+import { config as user } from '../constants';
+---
+
+<header class="flex items-center mb-10">
+  <span class="text-lg font-mono"><b>{user.name}</b></span>
+  <nav class="flex justify-end grow">
+    <button class="btn">
+      <img src="/assets/Themes.svg" class="m-1" />
+      <img src="/assets/ChevronDown.svg" class="m-1" />
+    </button>
+    <button class="btn">
+      <img src="/assets/Languages.svg" class="m-1" />
+      <img src="/assets/ChevronDown.svg" class="m-1" />
+    </button>
+  </nav>
+</header>
+<style>
+  .btn {
+    display: flex;
+    align-items: center;
+    border-radius: 0.375rem;
+    padding: 0.625rem 0.75rem;
+    transition: background-color 150ms ease-in-out;
+  }
+
+  .btn:hover {
+    background-color: #222;
+  }
+</style>
