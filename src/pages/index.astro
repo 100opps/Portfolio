@@ -3,9 +3,12 @@ import KeybordManager from '../components/KeybordManager.astro';
 import calculateAge from '../utils/ageCalculator';
 import Navbar from '../components/Navbar.astro';
 import Layout from '../layouts/Layout.astro';
+import Project from '../components/Project.astro';
 
+import { getTopRepositories } from '../utils/githubRepos';
 import { config } from '../constants';
 
+const projects = await getTopRepositories(config.name);
 const age = calculateAge(config.birthDate);
 ---
 
@@ -24,6 +27,10 @@ const age = calculateAge(config.birthDate);
     I like coding for fun, and I also play various sports. I'm passionate about soccer, but I also play basketball and
     volleyball. In my free time, I dive into music and make my own beats
   </p>
+  <h1 class="text-2xl font-bold my-4">Projects</h1>
+  <div class="flex flex-wrap sm:flex-row gap-4 w-full">
+    {projects.map((project, index) => <Project {...project} key={index} />)}
+  </div>
   <KeybordManager />
 </Layout>
 <style>
