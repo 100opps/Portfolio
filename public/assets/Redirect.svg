@@ -9,6 +9,6 @@
           name="Deploy"
           class="inline-block text-gray-500 transition-transform duration-300 group-hover:-translate-y-[1px] group-hover:translate-x-[1px]"
         >
-          <path d="M6 19L19 6m0 0v12.48M19 6H6.52" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          <path d="M6 19L19 6m0 0v12.48M19 6H6.52" stroke="white" stroke-linecap="round" stroke-linejoin="round"
           ></path>
         </svg>
