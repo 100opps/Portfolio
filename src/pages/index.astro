@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import KeybordManager from '../components/KeybordManager.astro';
+import { config } from '../constants';
+---
+
+<Layout>
+  <Navbar />
+  <h1 class="text-2xl font-bold">{config.title}</h1>
+  <p class="paragraph">
+    I'm Martín Aranda, a 16-year-old student from Chile who's into programming. Honestly, I enjoy messing around with
+    code, and I've learned a lot by watching YouTube videos. My top YouTubers are Midudev and Platzi.
+  </p>
+  <p class="paragraph">
+    Besides, I've skimmed through books like 'Python Fundamentals', 'Python for Everyone', 'You Don't Know JS', and
+    'Human JavaScript'.
+  </p>
+  <p class="paragraph">
+    I like coding for fun, and I also play various sports. I'm passionate about soccer, but I also play basketball and
+    volleyball. In my free time, I dive into music and make my own beats
+  </p>
+  <KeybordManager />
+</Layout>
+<style>
+  .paragraph {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+</style>
