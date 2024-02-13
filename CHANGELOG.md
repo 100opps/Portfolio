@@ -1,0 +1,27 @@
+##  (2024-2-13)
+
+* ✨ feat: Add `ageCalculator` function ([6a1e994](https://github.com/100opps/Portfolio/commit/6a1e994))
+* ✨ feat: Add `constants` file ([9bb03b2](https://github.com/100opps/Portfolio/commit/9bb03b2))
+* ✨ feat: Add `github` functions ([f328e97](https://github.com/100opps/Portfolio/commit/f328e97))
+* ✨ feat: Add `types` file ([3445f05](https://github.com/100opps/Portfolio/commit/3445f05))
+* ✨ feat: Add 404 page ([3918051](https://github.com/100opps/Portfolio/commit/3918051))
+* ✨ feat: Add component `Project` ([79d9844](https://github.com/100opps/Portfolio/commit/79d9844))
+* ✨ feat: Add components ([47e935f](https://github.com/100opps/Portfolio/commit/47e935f))
+* ✨ feat: Add index page ([4a40da5](https://github.com/100opps/Portfolio/commit/4a40da5))
+* ✨ feat: Add Layout ([c88821a](https://github.com/100opps/Portfolio/commit/c88821a))
+* ✨ feat: Use function birthday ([ba70169](https://github.com/100opps/Portfolio/commit/ba70169))
+* ✨ feat(projects): Add new section to Projects page ([66b84c4](https://github.com/100opps/Portfolio/commit/66b84c4))
+* ✨ feat(public): Add public files ([06e66a3](https://github.com/100opps/Portfolio/commit/06e66a3))
+* ✨ feat(svg): Change SVG color to white ([191b37e](https://github.com/100opps/Portfolio/commit/191b37e))
+* 🎨 chore(config): Add Tailwind configuration file ([4eb1b55](https://github.com/100opps/Portfolio/commit/4eb1b55))
+* 🐶 chore: Add .husky folder ([3fdbf74](https://github.com/100opps/Portfolio/commit/3fdbf74))
+* 💄 chore: Add global CSS files ([b3c2e19](https://github.com/100opps/Portfolio/commit/b3c2e19))
+* 💄 feat(config): Add `Eslint` and `Prettier` configuration files ([31b957c](https://github.com/100opps/Portfolio/commit/31b957c))
+* 📄 chore: Add `MIT` license ([3a71ec6](https://github.com/100opps/Portfolio/commit/3a71ec6))
+* 📦 feat(config): Add project configuration file ([cb9b9df](https://github.com/100opps/Portfolio/commit/cb9b9df))
+* 🔧 chore: `.vscode` folder ([4db3f39](https://github.com/100opps/Portfolio/commit/4db3f39))
+* 🙈 chore: Add `.gitignore` file ([3f97d35](https://github.com/100opps/Portfolio/commit/3f97d35))
+* 🚀 feat: Add `.env.d.ts` file ([451c857](https://github.com/100opps/Portfolio/commit/451c857))
+
+
+
