@@ -1,0 +1,14 @@
+<svg
+          width="12"
+          height="12"
+          viewBox="0 0 24 24"
+          stroke-width="3"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          color="currentColor"
+          name="Deploy"
+          class="inline-block text-gray-500 transition-transform duration-300 group-hover:-translate-y-[1px] group-hover:translate-x-[1px]"
+        >
+          <path d="M6 19L19 6m0 0v12.48M19 6H6.52" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          ></path>
+        </svg>
