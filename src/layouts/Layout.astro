@@ -1,0 +1,25 @@
+---
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.gif" />
+    <title>100opps | Portfolio</title>
+  </head>
+  <body class="font-sans">
+    <div class="wrapper">
+      <div class="absolute z-[-1] w-full h-full">
+        <div class="bg-img absolute w-full h-full opacity-5"></div>
+      </div>
+      <main class="max-w-2xl m-auto p-6 pt-6 min-h-screen">
+        <slot />
+      </main>
+    </div>
+  </body>
+</html>
