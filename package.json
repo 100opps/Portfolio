@@ -7,7 +7,9 @@
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --write .",
-    "lint:eslint": "eslint . --ext .js,.ts,.astro"
+    "lint:eslint": "eslint . --ext .js,.ts,.astro",
+    "prepare": "husky",
+    "commitlint": "commitlint --edit"
   },
   "dependencies": {
     "@astrojs/check": "^0.4.1",
@@ -17,6 +19,9 @@
   },
   "devDependencies": {
     "@astrojs/tailwind": "^5.1.0",
+    "@commitlint/cli": "^18.6.1",
+    "@commitlint/config-conventional": "^18.6.1",
+    "@commitlint/format": "^18.6.1",
     "@typescript-eslint/eslint-plugin": "^7.0.1",
     "@typescript-eslint/parser": "^7.0.1",
     "eslint": "^8.56.0",
