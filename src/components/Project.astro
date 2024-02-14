@@ -1,21 +1,20 @@
 ---
-const { url, name, description, language } = Astro.props;
+import type { Repository } from '../utils/githubRepos';
+const { html_url, name, description, language } = Astro.props as Repository;
 ---
 
 <div
   class="flex flex-col rounded-md border border-neutral-700 bg-neutral-800 p-4 min-w-72 sm:w-72 w-full cursor-pointer"
 >
   <div class="mb-2 flex items-center justify-between">
-    <a href={url} class="group text-xl font-medium">
+    <a class="group text-xl font-medium" href={html_url} target="_blank" rel="noopener noreferrer">
       <div class="flex items-center space-x-2 transition hover:text-gray-400">
         <h1>{name}</h1>
         <img src="/assets/Redirect.svg" alt="Redirect Icon" />
       </div>
     </a>
     <div class="flex items-center space-x-3">
-      <a href={url}>
-        <img src="/assets/Github.svg" alt="GitHub Icon" />
-      </a>
+      <img src="/assets/Github.svg" alt="GitHub Icon" />
     </div>
   </div>
   <p class="text-gray-400">{description}</p>
