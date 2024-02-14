@@ -1,4 +1,4 @@
-interface Repository {
+export interface Repository {
   name: string;
   language: string | null;
   description: string | null;
