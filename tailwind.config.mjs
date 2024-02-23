@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Raleway', 'sans-serif'],
-      },
-    },
+        sans: ['Raleway', 'sans-serif']
+      }
+    }
   },
-  plugins: [],
-};
+  plugins: []
+}
