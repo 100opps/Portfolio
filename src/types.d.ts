@@ -6,6 +6,7 @@ interface Profile {
 
 interface Config {
   name: string
+  username: string
   title: string
   label: string
   birthDate: string

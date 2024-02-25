@@ -7,6 +7,7 @@ const youtubeSVG =
 
 export const config: Config = {
   name: 'aranda10ss',
+  username: 'Ryo ϟ',
   title: 'About',
   label: 'dev',
   birthDate: '19/04/2007',
