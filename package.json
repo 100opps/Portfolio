@@ -9,7 +9,8 @@
     "format": "bunx @biomejs/biome format . --write",
     "lint": "bunx @biomejs/biome lint .",
     "prepare": "husky",
-    "commitlint": "commitlint --edit"
+    "commitlint": "commitlint --edit",
+    "test": "ava"
   },
   "dependencies": {
     "@astrojs/check": "^0.4.1",
